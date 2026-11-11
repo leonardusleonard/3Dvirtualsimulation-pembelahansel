@@ -1,0 +1,24 @@
+E-MODUL PEMBELAHAN SEL - Berbasis 3D Virtual Simulation (VIVABIOLOGY)
+====================================================================
+
+Isi folder:
+  index.html            e-modul 6 halaman (Beranda, Pendahuluan, Materi, Simulasi 3D, Rangkuman, Kuis)
+  sim-mitosis.html      simulasi 3D mitosis (Three.js), ditampilkan di halaman Simulasi 3D
+  sim-meiosis.html      simulasi 3D meiosis (Three.js), ditampilkan di halaman Simulasi 3D
+  sw.js                 service worker untuk cache offline (PWA)
+  manifest.webmanifest  identitas aplikasi (PWA)
+  logo.png              logo VIVABIOLOGY (ikon aplikasi)
+  Simpan semua file dalam SATU folder yang sama.
+
+Kebutuhan internet:
+  Simulasi 3D mitosis & meiosis memuat pustaka Three.js r169 dan font dari internet
+  (cdn.jsdelivr.net, fonts.googleapis.com). Tanpa internet, halaman Simulasi 3D menampilkan pesan untuk menyambungkan internet.
+  Halaman lain (materi, rangkuman, kuis) selalu berjalan offline.
+  Fitur Tebak Fase ada di dalam simulasi 3D (panel kanan, di bawah daftar Struktur).
+
+Agar simulasi 3D lengkap juga bisa dipakai OFFLINE (disarankan):
+  Unggah seluruh isi folder ke hosting statis (GitHub Pages, Netlify, dll).
+  Buka sekali saat online dan kunjungi halaman Simulasi 3D (Mitosis dan Meiosis).
+  sw.js akan menyimpan modul, Three.js, dan font di perangkat sehingga selanjutnya
+  bisa dibuka tanpa internet dan dapat "Ditambahkan ke layar utama" di HP.
+  Setiap kali memperbarui file, ubah CACHE = 'emodul-pembelahan-sel-v4' di sw.js menjadi v5, v6, dst.

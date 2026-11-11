@@ -1,0 +1,10 @@
+{
+  "name": "VIVABIOLOGY - Pembelahan Sel",
+  "short_name": "Pembelahan Sel 3D",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f6",
+  "theme_color": "#0f766e",
+  "lang": "id",
+  "icons": [{ "src": "logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }]
+}
